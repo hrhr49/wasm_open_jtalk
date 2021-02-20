@@ -26,4 +26,4 @@ emcmake cmake -DCMAKE_BUILD_TYPE=Release \
 emmake make
 
 # libopenjtalk.aからwasm及びjsファイルを作成
-emcc "$OPEN_JTALK_DIR/src/build/libopenjtalk.a" -o "$JS_DIR/openjtalk.js"
+emcc "$OPEN_JTALK_DIR/src/build/libopenjtalk.a" -o "$JS_DIR/open_jtalk.js"
