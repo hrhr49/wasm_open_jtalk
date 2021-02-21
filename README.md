@@ -11,14 +11,16 @@
 ## インストール
 
 ```sh
-TODO
+npm -g install wasm_open_jtalk
 ```
+
 
 ## 実行
 
+`open_jtalk.js` コマンドを実行します。コマンド引数の詳細は本家のOpen JTalkの方を参照ください。
+
 ```sh
-cd js
-node open_jtalk.js
+open_jtalk.js
 ```
 
 ## ビルド
