@@ -9,7 +9,9 @@ HTS_ENGINE_API_DIR="$TOOL_DIR/hts_engine_API"
 
 mkdir -p "$TOOL_DIR"
 
-git clone https://github.com/r9y9/hts_engine_API.git "$HTS_ENGINE_API_DIR"
+if [ ! -d "$HTS_ENGINE_API_DIR" ]; then
+    git clone https://github.com/r9y9/hts_engine_API.git "$HTS_ENGINE_API_DIR"
+fi
 
 # fgetposのところでビルドエラーになるのを回避
 cat << EOS | patch "$HTS_ENGINE_API_DIR/src/lib/HTS_misc.c"
