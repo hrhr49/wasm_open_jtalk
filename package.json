@@ -15,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-local-repo": "npm -g install .",
     "uninstall-local-repo": "npm -g uninstall wasm_open_jtalk",
-    "build:js": "make install-open_jtalk && sed -i '1i#!/usr/bin/env node' js/open_jtalk.js"
+    "build:js": "make install-open_jtalk && sed -i '1i#!/usr/bin/env node' js/open_jtalk.js",
+    "prepublishOnly": "npm run build:js"
   },
   "repository": {
     "type": "git",
