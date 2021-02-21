@@ -13,7 +13,7 @@ HTS_ENGINE_API_DIR="$TOOL_DIR/hts_engine_API"
 mkdir -p "$TOOL_DIR"
 mkdir -p "$JS_DIR"
 
-# git clone https://github.com/r9y9/open_jtalk.git "$OPEN_JTALK_DIR"
+git clone https://github.com/r9y9/open_jtalk.git "$OPEN_JTALK_DIR"
 
 mkdir -p "$OPEN_JTALK_DIR/src/build"
 cd "$OPEN_JTALK_DIR/src/build"
